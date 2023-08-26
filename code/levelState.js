@@ -300,7 +300,12 @@ Mario.LevelState.prototype.Draw = function(context) {
         time = 0;
     }
     this.DrawStringShadow(context, " " + time, 34, 1);
-
+    console.log("========================================");
+    console.log(time);
+    console.log(Mario.MarioCharacter.Coins);
+    console.log(Mario.MarioCharacter.Lives);
+    console.log(Mario.MarioCharacter.LevelString);
+    console.log("========================================");
     if (this.StartTime > 0) {
         t = this.StartTime + this.Delta - 2;
         t = t * t * 0.6;
